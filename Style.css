@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Ubuntu:wght@700&display=swap');
+
+body{
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+}
+header{
+    background-color: #f8f9fa;
+  }
+  header nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+header nav ul {
+display: flex;
+list-style: none;
+gap: 50px;
+}
+header nav ul a {
+text-decoration: none;
+color: #999999;
+
+}
+.logo{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.logo span {
+color: orange;
+}
+/* Titre , slogan & Image */
+header section{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 50px;
+}
+header section img {
+    width: 35%;
+}
+header section h1{
+    font-size:  4rem; ;
+    margin: 0;
+    font-weight: lighter;
+}
+header section p{
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: lighter;
+    color: #999999;
+}
+/* Selecteur CSS avance*/
+/* : not(first-child) veut dire ":not" ne opas toucher (:first_child) au premier enfant*/
+/* https://code.tutsplus.com/fr/tutorials/the-30-css-selectors-you-must-memorize--net-16048 */
+main section:not(:first-child) {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+  align-items: center;
+  text-align: right;
+  margin: 100px 0;
+}
+.welcome{
+text-align: center;
+margin: 65px auto; /* "auto" permet d'appmique des marges sur les cotes de facon egales*/
+width: 43%;
+}
+.welcome h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+.welcome p{
+margin: 0;
+font-weight: lighter;
+color: #999999;
+}
+main section img{
+    width: 50%;
+    
+    /*
+    * valeurs attendues de "box-shadow"
+    * Deplacement sur la droit/gauche , deplacment vers le bas/haur , flou et la coloeur 
+    *valeur psoitive vers la droite ou le bas
+    * Valeur negative cers la gauche ou le haut 
+    */
+box-shadow: 10px 10px 0 #a2c0be;
+}
+main section h3{
+    font-size: 2rem;
+    margin: 0;
+    font-weight: normal;
+    }
+main section p{
+    color: #999999;
+   margin-bottom: 50px;
+}
+main section div{
+width: 50%;
+}
+main section:nth-child(3) {
+    text-align: left;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+    background-color:#a2c0be ;
+    padding: 12px 32px ;
+    border-radius: 50px;
+}
+.btn:hover{
+    background-color: black;
+    transition: all 500ms;
+}
+footer{
+   font-size: 0.8rem;
+    text-align: center;
+    color: White;
+    background-color: #4a4a4b;
+    padding: 50px 0;
+}
